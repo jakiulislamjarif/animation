@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>cricket height</title>
+    <style>
+        .field{
+          border:1px solid steelblue;
+        }
+        .field:hover .bat{
+          transform:rotate(-60deg);
+          transform-origin:top right;
+        }
+        .bat{
+          transition: transform .1s;
+        }
+        .field:hover .ball{
+          transform:translate(500px,-500px);
+        }
+        .ball{
+          height:50px;
+          width:50px;
+          border-radius:50%;
+          background-color:red;
+          position:relative;
+         left:300px;
+          top:-60px;
+         transition:transform 1s ease-out .2s;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="field">
+        <img src="images (1).jpeg" class="bat">
+        <div class="ball"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <style>
+    .box{
+        width:100px;
+    height:100px;
+    border:2 px solid red;
+    background-color:rgb(38, 38, 116);
+/* property name | duration | easing function | delay */
+transition:width .5s linear 1s,background-color 1.7s ease-in 1.5s;
+transition:transform 2s ;
+}
+.box:hover{
+    width:300px;
+    background-color: rgb(197, 24, 53);
+    transform:rotate(45deg) scale(1.5) translateX(150PX);
+}
+  </style>
+  <body>
+    <div class="box">item-1</div>
+    <div class="box">item-2</div>
+    <div class="box">item-3</div>
+  </body>
+</html>
